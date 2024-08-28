@@ -1,17 +1,6 @@
-```@meta
-CurrentModule = CTApp
-```
-
 # CTApp
 
 Documentation for [CTApp](https://github.com/control-toolbox/CTApp.jl).
-
-```@index
-```
-
-```@autodocs
-Modules = [CTApp]
-```
 
 ## Dependencies
 
