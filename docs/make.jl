@@ -18,6 +18,6 @@ makedocs(
 )
 
 deploydocs(
-    repo = "github.com/control-toolbox/CTApp.git",
+    repo = "github.com/control-toolbox/CTApp.jl.git",
     devbranch = "main"
 )
