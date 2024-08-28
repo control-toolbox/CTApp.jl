@@ -17,7 +17,6 @@ The control-toolbox ecosystem gathers Julia packages for mathematical control an
 
 [![doc OptimalControl.jl](https://img.shields.io/badge/Documentation-OptimalControl.jl-blue)](http://control-toolbox.org/OptimalControl.jl)
 
-
 | **Documentation**  | **Code Status**  |
 |:-------------------|:-----------------|
 | [![Documentation][doc-stable-img]][doc-stable-url] [![Documentation][doc-dev-img]][doc-dev-url] | [![Build Status][ci-img]][ci-url] [![Covering Status][co-img]][co-url] |
