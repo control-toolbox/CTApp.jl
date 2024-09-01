@@ -73,7 +73,7 @@ julia> DocumenterTools.genkeys(user="my-owner", repo="MyApp.jl")
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/control-toolbox/control-toolbox.github.io/main/assets/img/allow_write_access_dark.png">
   <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/control-toolbox/control-toolbox.github.io/main/assets/img/allow_write_access_light.png">
-  <img alt="Allow write access." max-width="900px" src="https://raw.githubusercontent.com/control-toolbox/control-toolbox.github.io/main/assets/img/allow_write_access_light.png">
+  <img alt="Allow write access." style="visibility:visible;max-width:900px;" src="https://raw.githubusercontent.com/control-toolbox/control-toolbox.github.io/main/assets/img/allow_write_access_light.png">
 </picture>
 
 ## Step 3: Replace CTApp by your application / package name
