@@ -1,7 +1,5 @@
 # Instructions to set up a new control-toolbox application or package
 
-## Introduction
-
 This tutorial explains how to set up a new application or package in the control-toolbox ecosystem.
 A control-toolbox application / package is composed of:
 
@@ -17,13 +15,14 @@ A control-toolbox application / package is composed of:
 To find inspiration, you can visit some existing packages. For instance, check 
 [CTBase.jl](https://github.com/control-toolbox/CTBase.jl)
 or [OptimalControl.jl](https://github.com/control-toolbox/OptimalControl.jl).
-If you intend to add an application, please visit for instance 
+If you intend to add an application, please visit
 [CalculusOfVariations.jl](https://github.com/control-toolbox/calculus_of_variations)
 of [Kepler.jl](https://github.com/control-toolbox/kepler).
 
 > [!NOTE]
-> For application, the name of the module and the name of the Github repository are not the same. 
-> For instance, `MedicalResonanceImaging.jl` is in the repository `medical_resonance_imaging`. 
+> Currently for the applications, the names of the module and the Github 
+repository are not the same. 
+> For instance, [`MedicalResonanceImaging.jl`](https://github.com/control-toolbox/medical_resonance_imaging/blob/main/src/MedicalResonanceImaging.jl) is in the repository [`medical_resonance_imaging`](https://github.com/control-toolbox/medical_resonance_imaging). 
 > This will change for consistency.
 
 To make a new application / package, please follow these steps:
@@ -42,7 +41,7 @@ Go to [CTApp.jl](https://github.com/control-toolbox/CTApp.jl) repository, click 
 new repository.
 
 Or click on 
-[![Create a new repository with CTApp.jl as template](https://img.shields.io/badge/create_a_new_repository-CTApp.jl_template-darkgreen)](/new?template_name=CTApp.jl&amp;template_owner=control-toolbox)
+[![Create a new repository with CTApp.jl as template](https://img.shields.io/badge/create_a_new_repository-CTApp.jl_template-darkgreen)](https://github.com/new?template_name=CTApp.jl&template_owner=control-toolbox)
 
 ## Step 2: Add keys and secrets
 
