@@ -37,13 +37,44 @@ To make a new application / package, please follow these steps:
 
 ## Step 1: Create a new Github repository using CTApp.jl as template
 
-Go to [CTApp.jl](https://github.com/control-toolbox/CTApp.jl) repository, click on "Use this template" and create a 
-new repository.
+- Click on [![Create a new repository from CTApp.jl as template](https://img.shields.io/badge/create_a_new_repository_from-CTApp.jl_template-darkgreen)](https://github.com/new?template_name=CTApp.jl&template_owner=control-toolbox). 
+This is equivalent to go to 
+[CTApp.jl](https://github.com/control-toolbox/CTApp.jl) repository, 
+to click on "Use this template" and to create a new repository. 
+- Enter the name, the description and choose the owner. We assume you provide
 
-Or click on 
-[![Create a new repository with CTApp.jl as template](https://img.shields.io/badge/create_a_new_repository-CTApp.jl_template-darkgreen)](https://github.com/new?template_name=CTApp.jl&template_owner=control-toolbox)
+| Owner    | Name     |
+| :------: | :------: | 
+| my-owner | MyApp.jl |
+ 
+Hence, the application / package url should be:
+
+```bash
+https://github.com/my-owner/MyApp.jl
+```
 
 ## Step 2: Add keys and secrets
+
+Add a deploy key and a secret for the documentation with [DocumenterTools.genkeys](https://documenter.juliadocs.org/stable/lib/public/#DocumenterTools.genkeys).
+
+```julia
+julia> ]
+pkg> activate .
+pkg> add DocumenterTools
+julia> using DocumenterTools
+julia> using MyApp
+julia> DocumenterTools.genkeys(user="my-owner", repo="MyApp.jl")
+# follow instructions to add the deploy key and the secret
+```
+
+> [!WARNING]
+> Don't forget to allow write access for the deploy key.
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/control-toolbox/control-toolbox.github.io/main/assets/img/allow_write_access_dark.png">
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/control-toolbox/control-toolbox.github.io/main/assets/img/allow_write_access_light.png">
+  <img alt="Allow write access." src="https://raw.githubusercontent.com/control-toolbox/control-toolbox.github.io/main/assets/img/allow_write_access_light.png">
+</picture>
 
 ## Step 3: Replace CTApp by your application / package name
 
