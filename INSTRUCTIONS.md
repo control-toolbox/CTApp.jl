@@ -1,16 +1,7 @@
 # Instructions to set up a new control-toolbox application or package
 
 This tutorial explains how to set up a new application or package in the control-toolbox ecosystem.
-A control-toolbox application / package is composed of:
-
-- source code in `src`;
-- unit tests in `test`;
-- documentation in `docs`;
-- workflows in `.github/workflows` with a configuration file `.JuliaFormatter.toml`;
-- a licence and a readme.
-
-> [!NOTE]
-> We do not make any distinction between packages and applications concerning the setup since an application may become a package.
+We do not make any distinction between packages and applications concerning the setup since an application may become a package.
 
 To find inspiration, you can visit some existing packages. For instance, check 
 [CTBase.jl](https://github.com/control-toolbox/CTBase.jl)
@@ -18,12 +9,6 @@ or [OptimalControl.jl](https://github.com/control-toolbox/OptimalControl.jl).
 If you intend to add an application, please visit
 [CalculusOfVariations.jl](https://github.com/control-toolbox/calculus_of_variations)
 of [Kepler.jl](https://github.com/control-toolbox/kepler).
-
-> [!NOTE]
-> Currently for the applications, the names of the module and the Github 
-repository are not the same. 
-> For instance, [`MedicalResonanceImaging.jl`](https://github.com/control-toolbox/medical_resonance_imaging/blob/main/src/MedicalResonanceImaging.jl) is in the repository [`medical_resonance_imaging`](https://github.com/control-toolbox/medical_resonance_imaging). 
-> This will change for consistency.
 
 To make a new application / package, please follow these steps:
 
