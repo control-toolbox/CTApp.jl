@@ -25,7 +25,7 @@ To make a new application / package, please follow these steps:
 - Click on [![Create a new repository from CTApp.jl as template](https://img.shields.io/badge/create_a_new_repository_from-CTApp.jl_template-darkgreen)](https://github.com/new?template_name=CTApp.jl&template_owner=control-toolbox). 
 This is equivalent to go to 
 [CTApp.jl](https://github.com/control-toolbox/CTApp.jl) repository, 
-to click on "Use this template" and to create a new repository. 
+to click on "Use this template" and to click on "create a new repository". 
 - Enter the name, the description and choose the owner. We assume you provide
 
 | Owner    | Name     |
@@ -37,6 +37,9 @@ Hence, the application / package url should be:
 ```bash
 https://github.com/my-owner/MyApp.jl
 ```
+
+>[!WARNING]
+> You must give a name with `.jl` suffix.
 
 ## Step 2: Add keys and secrets
 
