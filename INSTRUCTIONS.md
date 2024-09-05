@@ -14,9 +14,9 @@ To make a new application / package, please follow these steps:
 
 1. [Create a new Github repository using CTApp.jl as template](#step-1-create-a-new-github-repository-using-ctappjl-as-template)
 2. [Add keys and secrets](#step-2-add-keys-and-secrets)
-3. [Replace "CTApp" by your application / package name](#step-3-replace-ctapp-by-your-application--package-name)
+3. [Replace name and owner](#step-3-replace-name-and-ower)
 4. [Update metadata](#step-4-update-metadata)
-5. [Active discussions](#step-5-active-discussions)
+5. [Activate discussions](#step-5-activate-discussions)
 6. [Make your first release and deploy documentation](#step-6-make-your-first-release-and-deploy-documentation)
 7. [Enter into control-toolbox ecosystem](#step-7-enter-into-control-toolbox-ecosystem)
 
@@ -69,13 +69,26 @@ pkg> rm DocumenterTools
 > Go to `Settings > Actions > General > Workflow permissions` and check that `Read and write permissions` is selected and that 
 `Allow GitHub Actions to create and approve pull requests` is marked.
 
-- Go to `Settings > Secrets and variables > Actions` and add a new repository secret for coverage. Give `CODECOV_TOKEN` as name. For the secret, if the owner is `control-toolbox` please create an issue asking to set up coverage and add @ocots to the assignees.
+- Go to `Settings > Secrets and variables > Actions` and add a new repository secret for coverage. Give `CODECOV_TOKEN` as name. For the secret, if the owner is `control-toolbox` please create an issue asking to set up coverage and add `ocots` to the assignees.
 
-## Step 3: Replace CTApp by your application / package name
+## Step 3: Replace name and ower
+
+Considering that the application / package name is `MyApp.jl` and the owner 
+is `my-owner`, please update the following.
+
+- Replace `control-toolbox/CTApp.jl` by `my-owner/MyApp.jl` in all the files
+except `INSTRUCTIONS.md`.
+- Replace all the remaining `CTApp` by `MyApp` in all the files except `INSTRUCTIONS.md`.
+- Rename the file `src/CTApp.jl` by `src/MyApp.jl`.
 
 ## Step 4: Update metadata
 
-## Step 5: Active discussions
+One can find templates for issues in `.github/ISSUE_TEMPLATE`.
+Please update `assignees` in markdown files from this directory. The assignees are notified when a new issue is created. You can put your github name for instance.
+
+## Step 5: Activate discussions
+
+Go to `Settings` and activate discussions.
 
 ## Step 6: Make your first release and deploy documentation
 
