@@ -65,9 +65,7 @@ pkg> rm DocumenterTools
   <img alt="Allow write access." src="https://raw.githubusercontent.com/control-toolbox/control-toolbox.github.io/main/assets/img/allow_write_access_light.png">
 </picture>
 
->[!NOTE]
-> Go to `Settings > Actions > General > Workflow permissions` and check that `Read and write permissions` is selected and that 
-`Allow GitHub Actions to create and approve pull requests` is marked.
+<br>
 
 - Go to `Settings > Secrets and variables > Actions` and add a new repository secret for coverage. Give `CODECOV_TOKEN` as name. For the secret, if the owner is `control-toolbox` please create an issue asking to set up coverage and add `ocots` to the assignees.
 
@@ -97,6 +95,20 @@ Go to `Settings` and activate discussions.
 
 ## Step 6: Make your first release and deploy documentation
 
+- Give permissions to Github actions. Go to `Settings > Actions > General`,
+scroll to the end of the page and in **Workflow permissions**, select 
+`Read and write permissions` and check `Allow GitHub Actions to create and approve pull requests`. Don't forget to save.
+- Push all your changes to remote Github repository.
+- Click on "create a new release". Then, click on "Choose a tag" and create the 
+new tag `v0.1.0`. Give as title `v0.1.0` and click on "Generate release notes".
+Now, you can click on "Publish release".
 
+>[!NOTE]
+> When publishing a new release, please update the version in `Project.toml`
+to `0.1.1` for instance before creating the new release.
 
 ## Step 7: Enter into control-toolbox ecosystem
+
+If you are developping an application, you may appear in top menu of
+https://control-toolbox.org. Please create an issue for asking and assign
+ocots.
