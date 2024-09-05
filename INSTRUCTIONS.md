@@ -62,7 +62,7 @@ pkg> rm DocumenterTools
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/control-toolbox/control-toolbox.github.io/main/assets/img/allow_write_access_dark.png">
   <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/control-toolbox/control-toolbox.github.io/main/assets/img/allow_write_access_light.png">
-  <img alt="Allow write access." src="https://raw.githubusercontent.com/control-toolbox/control-toolbox.github.io/main/assets/img/allow_write_access_light.png">
+  <img style="width:80%" alt="Allow write access." src="https://raw.githubusercontent.com/control-toolbox/control-toolbox.github.io/main/assets/img/allow_write_access_light.png">
 </picture>
 
 >[!NOTE]
