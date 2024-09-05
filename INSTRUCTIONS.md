@@ -55,16 +55,17 @@ https://github.com/my-owner/MyApp.jl
 
 ## Step 2: Add keys and secrets
 
-Add a deploy key and a secret for the documentation with [DocumenterTools.genkeys](https://documenter.juliadocs.org/stable/lib/public/#DocumenterTools.genkeys).
+- Add a deploy key and a secret for the documentation with [DocumenterTools.genkeys](https://documenter.juliadocs.org/stable/lib/public/#DocumenterTools.genkeys):
 
 ```julia
 julia> ]
-pkg> activate .
 pkg> add DocumenterTools
 julia> using DocumenterTools
-julia> using MyApp
 julia> DocumenterTools.genkeys(user="my-owner", repo="MyApp.jl")
 # follow instructions to add the deploy key and the secret
+# then you can remove DocumenterTools
+julia> ]
+pkg> rm DocumenterTools
 ```
 
 > [!WARNING]
@@ -73,8 +74,14 @@ julia> DocumenterTools.genkeys(user="my-owner", repo="MyApp.jl")
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/control-toolbox/control-toolbox.github.io/main/assets/img/allow_write_access_dark.png">
   <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/control-toolbox/control-toolbox.github.io/main/assets/img/allow_write_access_light.png">
-  <img alt="Allow write access." style="visibility:visible;max-width:900px;" src="https://raw.githubusercontent.com/control-toolbox/control-toolbox.github.io/main/assets/img/allow_write_access_light.png">
+  <img alt="Allow write access." src="https://raw.githubusercontent.com/control-toolbox/control-toolbox.github.io/main/assets/img/allow_write_access_light.png">
 </picture>
+
+>[!NOTE]
+> Go to `Settings > Actions > General > Workflow permissions` and check that `Read and write permissions` is selected and that 
+`Allow GitHub Actions to create and approve pull requests` is marked.
+
+- Go to `Settings > Secrets and variables` and add a new repository secret for coverage. Give `CODECOV_TOKEN` as name. 
 
 ## Step 3: Replace CTApp by your application / package name
 
