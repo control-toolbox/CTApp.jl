@@ -14,7 +14,7 @@ To make a new application / package, please follow these steps:
 
 1. [Create a new Github repository using CTApp.jl as template](#step-1-create-a-new-github-repository-using-ctappjl-as-template)
 2. [Add keys and secrets](#step-2-add-keys-and-secrets)
-3. [Replace name and owner](#step-3-replace-name-and-ower)
+3. [Replace name and owner](#step-3-replace-name-and-owner)
 4. [Update metadata](#step-4-update-metadata)
 5. [Activate discussions](#step-5-activate-discussions)
 6. [Make your first release and deploy documentation](#step-6-make-your-first-release-and-deploy-documentation)
@@ -71,7 +71,7 @@ pkg> rm DocumenterTools
 
 - Go to `Settings > Secrets and variables > Actions` and add a new repository secret for coverage. Give `CODECOV_TOKEN` as name. For the secret, if the owner is `control-toolbox` please create an issue asking to set up coverage and add `ocots` to the assignees.
 
-## Step 3: Replace name and ower
+## Step 3: Replace name and owner
 
 Considering that the application / package name is `MyApp.jl` and the owner 
 is `my-owner`, please update the following.
@@ -83,13 +83,20 @@ except `INSTRUCTIONS.md`.
 
 ## Step 4: Update metadata
 
-One can find templates for issues in `.github/ISSUE_TEMPLATE`.
+- One can find templates for issues in `.github/ISSUE_TEMPLATE`.
 Please update `assignees` in markdown files from this directory. The assignees are notified when a new issue is created. You can put your github name for instance.
+- Update `authors` in `Project.toml`.
+- Update `UUID` in `Project.toml` with the output of
+```julia
+julia> string(UUIDs.uuid4())
+```
 
 ## Step 5: Activate discussions
 
 Go to `Settings` and activate discussions.
 
 ## Step 6: Make your first release and deploy documentation
+
+
 
 ## Step 7: Enter into control-toolbox ecosystem
