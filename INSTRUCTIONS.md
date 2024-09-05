@@ -62,14 +62,14 @@ pkg> rm DocumenterTools
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/control-toolbox/control-toolbox.github.io/main/assets/img/allow_write_access_dark.png">
   <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/control-toolbox/control-toolbox.github.io/main/assets/img/allow_write_access_light.png">
-  <img style="width:80%" alt="Allow write access." src="https://raw.githubusercontent.com/control-toolbox/control-toolbox.github.io/main/assets/img/allow_write_access_light.png">
+  <img alt="Allow write access." src="https://raw.githubusercontent.com/control-toolbox/control-toolbox.github.io/main/assets/img/allow_write_access_light.png">
 </picture>
 
 >[!NOTE]
 > Go to `Settings > Actions > General > Workflow permissions` and check that `Read and write permissions` is selected and that 
 `Allow GitHub Actions to create and approve pull requests` is marked.
 
-- Go to `Settings > Secrets and variables` and add a new repository secret for coverage. Give `CODECOV_TOKEN` as name. 
+- Go to `Settings > Secrets and variables > Actions` and add a new repository secret for coverage. Give `CODECOV_TOKEN` as name. For the secret, if the owner is `control-toolbox` please create an issue asking to set up coverage and add @ocots to the assignees.
 
 ## Step 3: Replace CTApp by your application / package name
 
