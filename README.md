@@ -1,5 +1,9 @@
 # CTApp.jl
 
+This repository is a template to create an application or a package for the [control-toolbox ecosystem](https://github.com/control-toolbox). The instructions to set up a new application / package are given in this https://github.com/control-toolbox/CTApp.jl/discussions/9.
+
+----
+
 [ci-img]: https://github.com/control-toolbox/CTApp.jl/actions/workflows/CI.yml/badge.svg?branch=main
 [ci-url]: https://github.com/control-toolbox/CTApp.jl/actions/workflows/CI.yml?query=branch%3Amain
 
