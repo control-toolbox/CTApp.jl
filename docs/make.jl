@@ -7,7 +7,7 @@ makedocs(;
     warnonly=:cross_references,
     sitename="CTApp",
     format=Documenter.HTML(;
-        repolink = "https://"*repo_url,
+        repolink="https://" * repo_url,
         prettyurls=false,
         size_threshold_ignore=["index.md"],
         assets=[
@@ -18,6 +18,4 @@ makedocs(;
     pages=["Introduction" => "index.md"],
 )
 
-deploydocs(;
-    repo=repo_url*".git", devbranch="main"
-)
+deploydocs(; repo=repo_url * ".git", devbranch="main")
