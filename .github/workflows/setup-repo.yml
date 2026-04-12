@@ -154,11 +154,6 @@ jobs:
             echo "  Updated assignees in issue templates"
           fi
           
-          if [ -f ".github/workflows/AutoAssign.yml" ]; then
-            sed -i "s|assignees: ocots|assignees: $ACTOR|g" .github/workflows/AutoAssign.yml
-            echo "  Updated assignees in AutoAssign.yml"
-          fi
-          
           echo "=== Setup Complete ==="
 
       - name: Create Pull Request
